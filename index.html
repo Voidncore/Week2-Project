@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-image: url("Images/netflix.jpg");
-            background-repeat: no-repeat;
-        }
-    </style>
-    <title>Document</title>
+    <title> Netflix Mock-Page </title>
 </head>
 <body>
-    
+    <!-- Main Page -->
+
+    <!-- Top Bar  -->
+    <div class = 'Top-Bar'> 
+        <div class = 'Netflix-Landscape-Logo'>
+            <img src = '/Images/Netflix_Title_Logo.png' alt = 'Netflix'>
+        </div>
+        <div class = 'Top-Bar-Buttons'>
+            <button id="languageButton">
+                <select id = 'dropdown'>
+                    <option value="en"> English </option>
+                    <option value="es"> Español </option>
+                </select>
+            </button>
+            <button id="signinButton">
+                Sign In
+            </button>
+        </div>
+    </div>
+
+    <!-- loading JS Files for Buttons  -->
+    <script src="js/dropdown.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+/* Main Page */
+body {
+            background-image: url("Images/background.jpg");
+            background-repeat: no-repeat;
+        }
+
+
+/* Top Bar Stuff */
+
+.Netflix-Landscape-Logo {
+    width: 200px;
+    height: 75px;
+    float: left;
+    position: top;
+    z-index: 3;
+}
+
+#signinButton{
+
+}
+
+#languageButton{}
