@@ -1,0 +1,31 @@
+.learn-more {
+    width: 65%;
+    border: 2xp solid #23063D;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: #23063D;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.learn-more:hover {
+    background-color: #390A62;
+}
+
+.learn-more-button {
+    background-color: #35524A;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #1A3A3A;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    color: red;
+}
