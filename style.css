@@ -6,12 +6,36 @@ body {
 
 
 /* Top Bar Stuff */
-
-.Netflix-Landscape-Logo {
-    width: 200px;
-    height: 75px;
-    float: left;
-    position: top;
+.Topbar {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+#NetflixLandscapeLogo {
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    z-index: 3;
+}
 
+#languageDropdown {
+    width: 125px;
+    height: 35px;
+    background-color: #18191D;
+    opacity: .9;
+    text-align: center;
+    color: white;
+    border-radius: 8%;
+    border-color: gray;
+}
+
+#signinButton {
+    width: 70px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 8%;
+    border:none;
+    font-size: 36;
+}
