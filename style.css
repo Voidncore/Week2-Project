@@ -19,7 +19,7 @@ body {
     padding:20px;
     display:flex;
     justify-content: space-around;
-    gap:20px;
+    gap:13px;
 }
 
 #NetflixLandscapeLogo {
@@ -30,7 +30,7 @@ body {
     z-index: 3;
 }
 
-#languageDropdown {
+.languageDropdown {
     width: 125px;
     height: 35px;
     background-color: #18191D;
