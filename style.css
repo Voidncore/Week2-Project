@@ -9,12 +9,23 @@ body {
 .Topbar {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    width:100%
+}
+
+.Top-Bar-Buttons{
+    position: absolute;
+    right:0px;
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+    gap:20px;
 }
 
 #NetflixLandscapeLogo {
     width: 110px;
     height: 70px;
+    padding: 10px;
     position: absolute;
     z-index: 3;
 }
