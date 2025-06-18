@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> Netflix Mock-Page </title>
-</head>
-<body>
-    <!-- Main Page -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> Netflix Mock-Page </title>
+    </head>
+    <body>
+        <!-- Main Page -->
 
-    <!-- Top Bar  -->
-    <div class="Topbar"> 
-        <div>
-            <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="NetflixLandscapeLogo">
+        <!-- Top Bar  -->
+        <div class="Topbar"> 
+            <div>
+                <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="NetflixLandscapeLogo">
+            </div>
+
+            <div class="Top-Bar-Buttons">
+                <select class ='languageDropdown'>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+                
+                <button id="signinButton">Sign In</button>
+            </div>
         </div>
 
-        <div class="Top-Bar-Buttons">
-            <select class ='languageDropdown'>
-                <option value="en">English</option>
-                <option value="es">Español</option>
-            </select>
-            
-            <button id="signinButton">Sign In</button>
-        </div>
-    </div>
-
-    <!-- loading JS Files for Buttons  -->
-    <script src="js/dropdown.js"></script>
-</body>
+        <!-- loading JS Files for Buttons  -->
+        <script src="js/dropdown.js"></script>
+    </body>
+<!-- footer -->
+    <footer>
+        <p style = 'padding: 10px; font-weight: 1.1rem'>
+            Questions? Call 1-844-505-2993
+        </p>
+    </br>
+        <ul>
+            <li> FAQ </li>
+            <li> Account </li>
+            <li> Media Center </li>
+            <li> Jobs </li>
+            <li> Redeem Gift Cards </li>
+            <li> Ways to Watch </li>
+            <li> Privacy </li>
+            <li> Corporate Information </li>
+            <li> Speed Test </li>
+            <li> Only on Netflix </li>
+            <li> Ad Choices </li>
+            <li> Help Center </li>
+            <li> Investor Relations </li>
+            <li> Netflix Shop </li>
+            <li> Buy Gift Cards </li>
+            <li> Terms of Use </li>
+            <li> Cookie Preferences </li>
+            <li> Contact Us </li>
+            <li> Legal Notices </li>
+            <li> Do Not Sell or Share My Personal Information </li>
+        </ul>
+    </footer>
 </html>
