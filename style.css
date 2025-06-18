@@ -1,6 +1,6 @@
 .learn-more {
     width: 65%;
-    border: 2xp solid #23063D;
+    border: 2px solid #23063D;
     border-radius: 15px;
     padding: 2px;
     background-color: #23063D;
@@ -11,6 +11,13 @@
 
 .learn-more:hover {
     background-color: #390A62;
+}
+
+.learn-more-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .learn-more-button {
@@ -27,5 +34,40 @@
 .container {
     overflow: hidden;
     width: 100%;
-    color: red;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    padding: 50px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21003E;
+    opacity: 0.85;
+    color: white;
+    border-radius: 20px;
+}
+
+.under {
+    height: 400px;
+}
+
+.hero {
+    height: 400px; /* Adjust as needed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("Images/netflixjpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
