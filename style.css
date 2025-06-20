@@ -1,26 +1,38 @@
 /* Main Page */
+html {
+    font-size: 16px;
+}
+
 body {
             background-image: url("Images/background.jpg");
             background-repeat: no-repeat;
         }
-
-
 /* Top Bar Stuff */
 .Topbar {
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 30px;
+    left: 0;
+    width:100%
+}
+
+.Top-Bar-Buttons{
+    position: absolute;
+    right:0px;
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+    gap:13px;
 }
 
 #NetflixLandscapeLogo {
     width: 110px;
     height: 70px;
+    padding: 10px;
     position: absolute;
     z-index: 3;
 }
 
-#languageDropdown {
+.languageDropdown {
     width: 125px;
     height: 35px;
     background-color: #18191D;
@@ -40,4 +52,27 @@ body {
     border:none;
     font-size: 36;
     font-weight: bold;
+}
+
+footer {
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0;
+    column-count: 2; 
+    column-gap: 40px;
+}
+
+footer ul li {
+    margin-bottom: 12.5px; 
 }
