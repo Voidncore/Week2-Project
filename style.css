@@ -10,6 +10,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    padding: 30px;
 }
 
 #NetflixLandscapeLogo {
@@ -38,4 +39,5 @@ body {
     border-radius: 8%;
     border:none;
     font-size: 36;
+    font-weight: bold;
 }
