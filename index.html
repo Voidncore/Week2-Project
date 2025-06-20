@@ -6,16 +6,15 @@
         <link rel="stylesheet" href="style.css">
         <title> Netflix Mock-Page </title>
     </head>
+    <!-- Main Page -->
     <body>
-        <!-- Main Page -->
-
         <!-- Top Bar  -->
-        <div class="Topbar"> 
+        <div class="top-Bar"> 
             <div>
-                <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="NetflixLandscapeLogo">
+                <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="netflix-Landscape-Logo">
             </div>
 
-            <div class="Top-Bar-Buttons">
+            <div class="top-Bar-Buttons">
                 <select class ='languageDropdown'>
                     <option value="en">English</option>
                     <option value="es">Español</option>
@@ -24,9 +23,15 @@
                 <button id="signinButton">Sign In</button>
             </div>
         </div>
-
+        <!-- main -->
+        <div class="email-Subscription-Button">
+            <input type="text"
+            name = 'e-mail'
+            placeholder="Email address"
+            id = 'email-Input'>
+            <button id="get-Started-Button">Get Started  ></button>
+        </div>
         <!-- loading JS Files for Buttons  -->
-        <script src="js/dropdown.js"></script>
     </body>
 <!-- footer -->
     <footer>
@@ -57,4 +62,5 @@
             <li> Do Not Sell or Share My Personal Information </li>
         </ul>
     </footer>
+    <script src="js/dropdown.js"></script>
 </html>
