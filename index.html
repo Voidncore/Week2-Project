@@ -4,11 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-image: url("Images/netflix.jpg");
+                background-repeat: no-repeat;
+                background-color: black;
+            }
+        </style>
         <title> Netflix Mock-Page </title>
     </head>
-    <!-- Main Page -->
     <body>
-        <!-- Top Bar  -->
+          <!-- Top Bar  -->
         <div class="top-Bar"> 
             <div>
                 <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="netflix-Landscape-Logo">
@@ -31,9 +37,29 @@
             id = 'email-Input'>
             <button id="get-Started-Button">Get Started  ></button>
         </div>
-        <!-- loading JS Files for Buttons  -->
+        <div class="hero"></div>
+        <div class="container">
+            <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0 150 Q 500 0, 1000 150" stroke="#B81C1C" fill="transparent" stroke-width="3" />
+            </svg>
+        </div>
+        <div style="height: 2000px;"></div>
+        <div class="learn-more">
+        <p class="learn-more-content">
+            <span>The Netflix you love for just $7.99.<br>
+            Get our most affordable, ad-supported plan.
+            </span>
+        <button class="learn-more-button">Learn More</button>
+        </p>
+        </div>
+        <h3>More Reasons to Join</h3>
+        <div class="grid">
+        <div class="cell">Enjoy on your TV</div>
+        <div class="cell">Download your shows to watch offline</div>
+        <div class="cell">Watch Everywhere</div>
+        <div class="cell">Create profiles for kids</div>
     </body>
-<!-- footer -->
+    <!-- footer -->
     <footer>
         <p style = 'padding: 10px; font-weight: 1.1rem'>
             Questions? Call 1-844-505-2993
@@ -62,5 +88,6 @@
             <li> Do Not Sell or Share My Personal Information </li>
         </ul>
     </footer>
+    <!-- Insert JSScripts -->
     <script src="js/dropdown.js"></script>
 </html>
