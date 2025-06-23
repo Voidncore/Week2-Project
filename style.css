@@ -4,9 +4,11 @@ html {
 }
 
 body {
-            background-image: url("Images/background.jpg");
-            background-repeat: no-repeat;
-        }
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
 /* Top Bar Stuff */
 .top-Bar {
     position: absolute;
