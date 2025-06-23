@@ -1,4 +1,148 @@
-.learn-more {
+/* Main Page */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+/* Top Bar Stuff */
+.topBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%
+}
+
+.topBarButtons{
+    position: absolute;
+    right:0px;
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+    gap:13px;
+}
+
+#netflixLandscapeLogo {
+    width: 110px;
+    height: 70px;
+    padding: 10px;
+    position: absolute;
+    z-index: 3;
+}
+
+/* Main Page */
+.languageWrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #18191D;
+    opacity: 0.9;
+    padding: 0 10px;
+    border-radius: 8%;
+    border: 1px solid gray;
+    height: 35px;
+    width: fit-content;
+}
+
+.languageIcon {
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+}
+
+.languageDropdown {
+    background-color: transparent;
+    color: white;
+    border: none;
+    background-color: #18191D;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    appearance: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.signinButton {
+    width: 70px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 8%;
+    border:none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50;
+}
+
+.emailSubscriptionButton{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.emailInput{
+    width: 250px;
+    height: 60px;
+    background-color:#18191D; 
+    opacity: .9;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    font-size: 1.05rem;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.getStartedButton{
+    width: 175px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: none;
+}
+
+/* Footer Stuff */
+footer {
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0;
+    column-count: 2; 
+    column-gap: 40px;
+}
+
+footer ul li {
+    margin-bottom: 12.5px; 
+}
+
+.learnMore {
     width: 65%;
     border: 2px solid #23063D;
     border-radius: 15px;
@@ -9,25 +153,25 @@
     transition: background-color 0.5s ease;
 }
 
-.learn-more:hover {
+.learnMore:hover {
     background-color: #390A62;
 }
 
-.learn-more-content {
+.learnMoreContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
 
-.learn-more-button {
+.learnMoreButton {
     background-color: #35524A;
     color: white;
     cursor: pointer;
     transition: background-color 1s ease;
 }
 
-.learn-more-button:hover {
+.learnMoreButton:hover {
     background-color: #1A3A3A;
 }
 
@@ -65,7 +209,7 @@ svg {
 }
 
 .hero {
-    height: 400px; /* Adjust as needed */
+    height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("Images/netflixjpg");
     background-size: cover;
     background-position: center;

@@ -1,40 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-image: url("Images/netflix.jpg");
-            background-repeat: no-repeat;
-            background-color: black;
-        }
-    </style>
-    <title>Document</title>
-</head>
-<body>
-    <div class="hero"></div>
-    <div class="container">
-        <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0 150 Q 500 0, 1000 150" stroke="#B81C1C" fill="transparent" stroke-width="3" />
-        </svg>
-    </div>
-    <div style="height: 2000px;"></div>
-    <div class="learn-more">
-    <p class="learn-more-content">
-        <span>The Netflix you love for just $7.99.<br>
-        Get our most affordable, ad-supported plan.
-        </span>
-    <button class="learn-more-button">Learn More</button>
-    </p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> Netflix Mock-Page </title>
+    </head>
+    <body>
+          <!-- Top Bar  -->
+        <header class="topBar"> 
+            <div>
+                <a href="https://www.netflix.com">
+                    <img src="./images/NetflixLandscape.jpg" alt="Netflix" id="netflixLandscapeLogo">
+                </a>
+            </div>
 
-    <h3>More Reasons to Join</h3>
-    <div class="grid">
-    <div class="cell">Enjoy on your TV</div>
-    <div class="cell">Download your shows to watch offline</div>
-    <div class="cell">Watch Everywhere</div>
-    <div class="cell">Create profiles for kids</div>
-</body>
+            <div class="topBarButtons">
+                <div class="languageWrapper">
+                    <span class="languageIcon">文A</span>
+                    <select class="languageDropdown">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    </select>
+                </div>
+
+                <button class="signinButton">Sign In</button>
+            </div>
+
+        </header>
+        <!-- main -->
+        <div class="emailSubscriptionButton">
+            <input type="text" name = 'e-mail'
+            placeholder="Email address" class = 'emailInput'></input>
+            <button class="getStartedButton"> 
+                <span class = 'Button-Text'> Get Started </span>
+                <span> &gt; </span>
+            </button>
+        </div>
+        <!--Hero Section-->
+        <!-- <div class="hero">
+            <div class="container">
+                <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 0 150 Q 500 0, 1000 150" stroke="#B81C1C" fill="transparent" stroke-width="3" />
+                </svg>
+            </div>
+            <div style="height: 2000px;">
+                <div class="learnMore">
+                    <p class="learnMoreContent">
+                        The Netflix you love for just $7.99.
+                        </br>
+                        Get our most affordable, ad-supported plan.
+                        <button class="learnMoreButton">Learn More</button>
+                    </p>
+                </div>
+                <h3>More Reasons to Join</h3>
+                <div class="grid">
+                    <div class="cell">Enjoy on your TV</div>
+                    <div class="cell">Download your shows to watch offline</div>
+                    <div class="cell">Watch Everywhere</div>
+                    <div class="cell">Create profiles for kids</div>
+                </div>
+            </div>
+        </div> -->
+    <!-- footer -->
+    </body>
+    <footer>
+        <p style = 'padding: 10px; font-weight: 1.1rem'>
+            Questions? Call <a href="tel:1-844-505-2993" style="color: inherit; text-decoration: underline;">1-844-505-2993</a>
+        </p>
+        </br>
+        <ul>
+            <li> FAQ </li>
+            <li> Account </li>
+            <li> Media Center </li>
+            <li> Jobs </li>
+            <li> Redeem Gift Cards </li>
+            <li> Ways to Watch </li>
+            <li> Privacy </li>
+            <li> Corporate Information </li>
+            <li> Speed Test </li>
+            <li> Only on Netflix </li>
+            <li> Ad Choices </li>
+            <li> Help Center </li>
+            <li> Investor Relations </li>
+            <li> Netflix Shop </li>
+            <li> Buy Gift Cards </li>
+            <li> Terms of Use </li>
+            <li> Cookie Preferences </li>
+            <li> Contact Us </li>
+            <li> Legal Notices </li>
+            <li> Do Not Sell or Share My Personal Information </li>
+        </ul>
+    </footer>
+    <footer>
+        <div style = 'margin: 10px; font-size: 0.9rem; margin-bottom: 40px; padding-top: 30px'>
+            <span class="languageIcon">文A</span>
+            <select class="languageDropdown">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </footer>
+    <!-- Insert JSScripts -->
+    <script src="js/dropdown.js"></script>
 </html>
