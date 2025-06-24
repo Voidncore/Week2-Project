@@ -1,4 +1,4 @@
-/* Main Page */
+/* Global */
 html {
     font-size: 16px;
 }
@@ -7,23 +7,27 @@ body {
     background-image: url("Images/background.jpg");
     background-repeat: no-repeat;
     background-color: black;
+    background-position: -400px 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Top Bar Stuff */
+/* main */
 .topBar {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%
+    width: 100%;
 }
 
-.topBarButtons{
+.topBarButtons {
     position: absolute;
-    right:0px;
-    padding:20px;
-    display:flex;
+    right: 0px;
+    padding: 20px;
+    display: flex;
     justify-content: space-around;
-    gap:13px;
+    gap: 13px;
 }
 
 #netflixLandscapeLogo {
@@ -34,7 +38,77 @@ body {
     z-index: 3;
 }
 
-/* Main Page */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 20px 60px; 
+}
+
+.mainText {
+    color: white;
+    font-family: 'Helvetica', 'Arial', 'sans serif';
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mainText p {
+    font-size: 1rem;
+    font-family: 'Helvetica', 'Arial', 'sans serif';
+    font-weight: normal;
+}
+
+.emailSubscriptionContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emailSubscriptionContainer p {
+    color: white;
+    font-family: 'Helvetica', 'Arial', 'sans serif';
+    font-weight: normal;
+}
+
+.emailInput {
+    width: 250px;
+    height: 60px;
+    background-color: #18191D; 
+    opacity: 0.9;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    font-size: 1.05rem;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.getStartedButton {
+    width: 175px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+    padding: 18px 25px;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.getStartedArrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
 .languageWrapper {
     display: flex;
     align-items: center;
@@ -53,6 +127,7 @@ body {
     font-size: 1rem;
     font-family: Helvetica, Arial, sans-serif;
     user-select: none;
+    margin-right: 8px;
 }
 
 .languageDropdown {
@@ -73,75 +148,82 @@ body {
     background-color: red;
     color: white;
     border-radius: 8%;
-    border:none;
+    border: none;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 50;
-}
-
-.emailSubscriptionButton{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 300px;
-    margin-bottom: 50px;
-    width: 100%;
-}
-
-.emailInput{
-    width: 250px;
-    height: 60px;
-    background-color:#18191D; 
-    opacity: .9;
-    text-align: left;
-    color: white;
-    padding-left: 20px;
-    font-size: 1.05rem;
-    font-family: Helvetica, Arial, sans-serif;
-    border-radius: 5px;
-    border-color: gray;
-}
-
-.getStartedButton{
-    width: 175px;
-    height: 60px;
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    border:none;
-    text-align: left;
-    padding-left: 20px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.1rem;
-    font-weight: none;
+    font-size: 1rem;
 }
 
 /* Footer Stuff */
 footer {
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
     color: lightgray;
     background-color: black;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    padding: 40px 20px 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Constrain footer content to a max width and left-align it inside */
+.footerContent {
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.footer .emailSubscriptionContainer {
+    justify-content: center;
+}
+
+.footer .emailSubscriptionContainer #footerEmailWrapper {
+    flex-wrap: nowrap;
+}
+
+.footer .emailSubscriptionContainer .emailInput {
+    width: 390px
+}
+
+.footer .emailSubscriptionContainer p {
+    font-size: 1rem;
+}
+
+.footerTop p {
+    padding-bottom: 20px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footerTop a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 footer ul {
     list-style-type: none;
     text-decoration: underline;
-    padding: 10px;
+    padding: 10px 0;
     margin: 0;
-    column-count: 2; 
+    column-count: 2;
     column-gap: 40px;
 }
 
 footer ul li {
-    margin-bottom: 12.5px; 
+    margin-bottom: 12.5px;
+    cursor: pointer;
 }
 
+.footerLanguage select {
+    margin-top: 10px;
+}
+
+.footer .languageWrapper {
+    margin-bottom:50px
+}
+
+/* Hero Section (unchanged) */
 .learnMore {
     width: 65%;
     border: 2px solid #23063D;
